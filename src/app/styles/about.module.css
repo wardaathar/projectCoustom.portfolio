@@ -1,0 +1,70 @@
+/* Container for the About section */
+.aboutContainer {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  padding: 50px 30px;
+  max-width: 900px;
+  margin: 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutContainer:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* About Heading */
+.aboutHeading {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 25px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Paragraph text */
+.aboutParagraph {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #1f2937;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* Add subtle animation for fade-in effect */
+.aboutContainer {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .aboutContainer {
+    padding: 40px 20px;
+  }
+
+  .aboutHeading {
+    font-size: 2.5rem; /* Adjusted font size for smaller screens */
+  }
+
+  .aboutParagraph {
+    font-size: 1rem; /* Adjust paragraph font size */
+  }
+}

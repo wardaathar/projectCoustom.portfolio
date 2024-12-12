@@ -1,0 +1,101 @@
+/* Container for the whole projects section */
+.projectsContainer {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  text-align: center;
+}
+
+/* Grid layout for the project items */
+.projectsGrid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  justify-items: center;
+}
+
+/* For larger screens (Desktop) */
+@media (min-width: 1200px) {
+  .projectsGrid {
+    grid-template-columns: repeat(3, 1fr); /* 4 items per row */
+  }
+}
+
+/* For medium-sized screens (Tablets) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .projectsGrid {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 767px) {
+  .projectsGrid {
+    grid-template-columns: repeat(1, 1fr); /* 1 item per row */
+  }
+}
+
+/* Center the items */
+.projectsCenter {
+  justify-content: center;
+}
+
+/* Heading Style */
+.projectsContainer h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Style for individual project card */
+.projectCard {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 350px;
+}
+
+/* Hover effect for cards */
+.projectCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Title Style */
+.projectCard h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Description Style */
+.projectCard p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Tags Section */
+.projectCard .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Individual tag styles */
+.projectCard .tag {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Project image style */
+.projectCard img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}

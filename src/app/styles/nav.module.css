@@ -1,0 +1,84 @@
+/* Base styles for the Navbar */
+.navbarContainer {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarBrand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbarLinks ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbarLinks li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbarLinks li a:hover {
+  color: #f39c12;
+}
+
+/* Hamburger menu icon */
+.navbarMenuIcon {
+  display: none;
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+.navbarMenu {
+  display: none;
+}
+
+.navbarMenu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style: none;
+  background-color: #333;
+  padding: 15px;
+  margin: 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbarMenu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbarLinks {
+    display: none;
+  }
+
+  .navbarMenuIcon {
+    display: block;
+  }
+
+  .navbarMenu {
+    display: block;
+  }
+}

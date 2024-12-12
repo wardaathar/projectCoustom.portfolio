@@ -1,0 +1,77 @@
+/* Container for the heading */
+.headingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/* Unique title text styling */
+.headingTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1f2937;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 15px 25px;
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: none;
+  position: relative;
+  z-index: 2;
+  animation: fadeInDown 1s ease-in-out;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Glow effect under the text */
+.headingTitle::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 5px;
+  background: linear-gradient(90deg, #f39c12, #e67e22);
+  bottom: 0;
+  left: -10%;
+  border-radius: 5px;
+  z-index: 1;
+  animation: slideIn 1s ease-in-out;
+}
+
+/* Hover effect for the title */
+.headingTitle:hover {
+  transform: translateY(-8px) scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+/* Fade-in animation */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide-in animation for underline */
+@keyframes slideIn {
+  from {
+    width: 0;
+  }
+  to {
+    width: 120%;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .headingTitle {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+}

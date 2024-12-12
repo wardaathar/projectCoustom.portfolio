@@ -1,0 +1,32 @@
+.heroContainer {
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url('/wr.jpg'); 
+  background-size: cover; /* Ensure image covers the container */
+  background-position: center; 
+  background-repeat: no-repeat; /* Avoid repeating the image */
+ 
+}
+
+.heroContent {
+  margin-left: 3rem; /* Adjust this value to control the left margin */
+  text-align: center; /* Align content to the left */
+  color: #333; /* Set the text color */
+}
+
+.heroMain p {
+  font-size: 2rem;
+  margin: 0;
+ 
+  font-weight: bold;
+}
+
+.heroMain p:nth-child(2) {
+  font-size: 3rem;
+  color: #0070f3; /* Accent color */
+}
+

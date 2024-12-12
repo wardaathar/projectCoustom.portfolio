@@ -1,0 +1,77 @@
+/* Overall footer styling */
+.footer {
+
+  color: #ecf0f1;  background: linear-gradient(135deg, #2c3e50, #34495e);
+  padding: 40px 20px;
+  text-align: center;
+  width: 100%;
+  font-size: 1rem;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  border-top: 3px solid #f39c12;
+}
+
+/* Footer content section */
+.footerContent {
+  margin-bottom: 20px;
+}
+
+/* Styling for links inside footer */
+.footer a {
+  color: #f1c40f;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer a:hover {
+  color: #e67e22;
+  transform: scale(1.1);
+}
+
+/* Footer social icons container */
+.footerSocial {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Social media icons styling */
+.footerSocial a {
+  background-color: #f39c12;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footerSocial a:hover {
+  background-color: #e67e22;
+  transform: scale(1.2);
+}
+
+/* Footer copyright section */
+.footerCopy {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #bdc3c7;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .footerContent p {
+    font-size: 0.9rem;
+  }
+
+  .footerSocial a {
+    font-size: 1rem;
+    padding: 8px;
+  }
+}
