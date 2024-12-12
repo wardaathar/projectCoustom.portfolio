@@ -11,6 +11,7 @@ const Hero = () => {
  
       <div className={styles.heroContent}>
         <div className={styles.heroMain}>
+          
       
           <p>I`m</p>
           <p>Wardah</p>
