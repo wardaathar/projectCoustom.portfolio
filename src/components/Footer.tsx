@@ -65,7 +65,7 @@ const Footer = () => {
       </div>
 
       <p className={styles.footerCopy}>
-        &copy; {new Date().getFullYear()} My Portfolio. All Rights Reserved.
+        &copy; 2024 My Portfolio. All Rights Reserved.
       </p>
     </footer>
   );
