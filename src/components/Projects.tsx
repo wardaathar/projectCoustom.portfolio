@@ -22,7 +22,7 @@ const data = [
     id: 2,
     title: "Dynamic Editable shareable Resume Builder",
     desc: "A basic HTML, TypeScript, and JavaScript-based App for Resumer.",
-    img:"/dynamic.png",
+    img:"/dynamic.PNG",
     tags: ["React", "Node.js", "CSS", "TypeScript"],
   },
   {
