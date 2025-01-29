@@ -1,13 +1,13 @@
 body{
     color: rgb(17, 17, 16);
-    background-color:#000;
+    background-color:white;
     margin: 0%;
 }
 *{
     box-sizing: border-box;
     border-width: 0;
     border-style: 0;
-    background-color: #6e6868                                                                                           ;
+    background-color: white;                                                                                        ;
 }
   
   @keyframes fadeIn {

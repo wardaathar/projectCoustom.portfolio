@@ -12,7 +12,7 @@ function NavBar() {
   return (
     <div className={styles.navbarContainer}>
       <div className={styles.navbar}>
-        <div className={styles.navbarBrand}>WARDA RIZVI</div>
+        <div className={styles.navbarBrand}>Syeda warda</div>
         
         {/* Desktop Navigation */}
         <div className={styles.navbarLinks}>

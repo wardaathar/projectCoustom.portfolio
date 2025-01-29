@@ -1,7 +1,8 @@
 /* Overall footer styling */
 .footer {
 
-  color: #ecf0f1;  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: black;  
+  background: white;
   padding: 40px 20px;
   text-align: center;
   width: 100%;

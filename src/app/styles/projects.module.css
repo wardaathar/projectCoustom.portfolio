@@ -1,8 +1,9 @@
 /* Container for the whole projects section */
 .projectsContainer {
   padding: 50px 20px;
-  background: linear-gradient(135deg, #2c3e50, #34495e);
+  background: white;
   text-align: center;
+  box-shadow: 3px solid #f39c12;
 }
 
 /* Grid layout for the project items */
